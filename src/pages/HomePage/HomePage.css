@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contentApp{
+    display: flex;
+    height: 100vh;
+}
+
+.mainContainer {
+    flex: 0 0 80vw;
+    overflow-x: hidden;
+    transition: flex 0.3s;
+}
+
+.mainContainer.cerrado {
+    flex: 0 0 100vw;
+    overflow: hidden;
+}
+
+.leftContent {
+    display: flex;
+    width: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

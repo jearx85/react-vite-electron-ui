@@ -1,0 +1,8 @@
+.containerNav {
+    width: inherit;
+}
+
+.toggleButton {
+    display: block;
+    margin-bottom: 10px;
+}
