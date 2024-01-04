@@ -1,7 +1,9 @@
 import React from 'react';
 import { Sidebar, NavBar, MainContent, RightView } from '../../components/index';
 
+
 import './HomePage.css'
+import TitleNav from '../../components/TitleNav/TitleNav';
 
 export default function HomePage() {
   // return (
@@ -22,9 +24,10 @@ export default function HomePage() {
 
   return (
     <>
+    <TitleNav/>
       <div className="contentApp">
         <div className="mainContainer">
-          <NavBar />
+          {/* <NavBar /> */}
 
           <div className="leftContent">
             <Sidebar />

@@ -17,7 +17,7 @@ export default function NavBar() {
             
             <div className="container-fluid">
                 <a class="navbar-brand" href="#">
-                <img src={Logo} alt="Nadhis logo" width="80" height="35"/>
+                <img src={Logo} alt="Nadhis logo" width="40" height="20"/>
                 </a>
     
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@ export default function NavBar() {
                 </form>
                 </div>
             </div>
-            <button className="toggleButton" onClick={toggleOffcanvas}>Toggle</button>
+              <button className="toggleButton" onClick={toggleOffcanvas}>Toggle</button>
             </nav>   
         </div>
     </div>

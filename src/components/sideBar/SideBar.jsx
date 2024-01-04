@@ -5,7 +5,36 @@ import { Tooltips } from "../index";
 
 const Sidebar = () => {
   const iconsList = [FaHome, FaCode, FaDatabase, FaCog, FaFileCode];
-  iconsList.map((icon) => console.log(icon));
+
+  function handleClck(){
+    alert("hola")
+  }
+
+//   return (
+//     <div className="sidebar">
+//       <div className="sidebar-item" onClick={handleClck}>
+//         <FaHome className="sidebar-icon" />
+//         Home
+//       </div>
+//       <div className="sidebar-item">
+//         <FaCode className="sidebar-icon" />
+//         Editor
+//       </div>
+//       <div className="sidebar-item">
+//         <FaDatabase className="sidebar-icon" />
+//         Database
+//       </div>
+//       <div className="sidebar-item">
+//         <FaCog className="sidebar-icon" />
+//         Settings
+//       </div>
+//       <div className="sidebar-item">
+//         <FaFileCode className="sidebar-icon" />
+//         Files
+//       </div>
+//     </div>
+//   ); 
+// }
 
   return (
     <div>

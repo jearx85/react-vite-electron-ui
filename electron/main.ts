@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, Menu } from 'electron'
 import path from 'node:path'
 
 // The built directory structure
@@ -20,7 +20,7 @@ const VITE_DEV_SERVER_URL = process.env['VITE_DEV_SERVER_URL']
 
 function createWindow() {
   win = new BrowserWindow({
-    icon: path.join(process.env.VITE_PUBLIC, 'electron-vite.svg'),
+    icon: path.join(process.env.VITE_PUBLIC, '../src/assets/img/logo_nadhis_blanco.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
@@ -30,6 +30,9 @@ function createWindow() {
   win.webContents.on('did-finish-load', () => {
     win?.webContents.send('main-process-message', (new Date).toLocaleString())
   })
+
+  const menu = Menu.buildFromTemplate([]);
+  Menu.setApplicationMenu(menu);
 
   if (VITE_DEV_SERVER_URL) {
     win.loadURL(VITE_DEV_SERVER_URL)

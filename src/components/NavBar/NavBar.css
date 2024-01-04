@@ -6,3 +6,8 @@
     display: block;
     margin-bottom: 10px;
 }
+
+.collapse{
+    align-items: center;
+    justify-content: center;
+}

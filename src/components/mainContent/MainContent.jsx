@@ -1,11 +1,14 @@
 import React from 'react';
 import './MainContent.css';
 import img from '../../assets/img/pruebaimg.jpg';
+import { NavBar } from '../index';
+
 
 export default function MainContent() {
 
   return (
     <div className="contentMain">
+      <NavBar />
       <div className='col-8 mt-5 ms-5'>
           <ul className="list-group">
           <li className="list-group-item active" aria-current="true">An active item</li>
